@@ -33,9 +33,10 @@ from keras.optimizers import Adam, SGD
 class Settings:
     def __init__(self):
         self.patience = 10
-        self.epochs = 100
+        self.epochs = 1
         self.lr_factor = 0.1
-        self.batch_size = 128
+        self.batch_size = 16
+        #self.batch_size = 128
 
 
 def Auto1(patch_size, opt=Adam()):
